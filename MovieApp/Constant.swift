@@ -21,14 +21,17 @@ enum Result<T> {
           case invalidStatusCode(Int)
       }
 
-struct K {
+struct MovieConstant {
     static let baseUrl = "http://www.omdbapi.com/"
     static let apikey = "b831f50c"
+    
+    static let moveToDetailScreenSegue = "moveToDetailScreen"
+    static let movieImage = "MovieImage"
 }
-
-//https://www.omdbapi.com/?s=Inception&apikey=b831f50c
 
 public enum DownloadResult<T> {
     case sucess(T)
     case faliure(Error)
 }
+
+

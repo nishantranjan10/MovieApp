@@ -17,7 +17,7 @@ class MovieListViewModel {
     
     func getMovieSearchListData<T: Decodable>(movieName : String,pageNumber : String,objectType: T.Type, completion: @escaping (Result<T>) -> Void) {
         
-        let urlString = "\(K.baseUrl)?s=\(movieName)&apikey=\(K.apikey)&page=\(pageNumber)"
+        let urlString = "\(MovieConstant.baseUrl)?s=\(movieName)&apikey=\(MovieConstant.apikey)&page=\(pageNumber)"
         
         moviesServices.dataRequest(with: urlString, objectType: objectType.self) { (result: Result) in
             switch result {

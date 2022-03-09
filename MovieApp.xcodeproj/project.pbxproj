@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C467F0BD27D76B9100BFC301 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C467F0BC27D76B9100BFC301 /* MovieDetailViewController.swift */; };
 		C469E2FA27D44E69004E3AEF /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C469E2F927D44E69004E3AEF /* UIImageView+Extension.swift */; };
 		C49538C527D202B400D155E5 /* MovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49538C427D202B400D155E5 /* MovieListCell.swift */; };
 		C49538C727D2039300D155E5 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49538C627D2039300D155E5 /* Movies.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C467F0BC27D76B9100BFC301 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		C469E2F927D44E69004E3AEF /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		C49538C427D202B400D155E5 /* MovieListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		C49538C627D2039300D155E5 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				C4A01BC127CFBCD100E08452 /* MovieListViewController.swift */,
+				C467F0BC27D76B9100BFC301 /* MovieDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				C49538C527D202B400D155E5 /* MovieListCell.swift in Sources */,
 				C49538CF27D24C6F00D155E5 /* Constant.swift in Sources */,
 				C4A01B8D27CFB9A600E08452 /* SceneDelegate.swift in Sources */,
+				C467F0BD27D76B9100BFC301 /* MovieDetailViewController.swift in Sources */,
 				C49538CA27D2497600D155E5 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

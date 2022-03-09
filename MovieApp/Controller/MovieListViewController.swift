@@ -65,6 +65,17 @@ class MovieListViewController: UIViewController {
             }
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == MovieConstant.moveToDetailScreenSegue {
+            if let destinationVC = segue.destination as? MovieDetailViewController {
+                if let selectedIndexPaths = self.tableView.indexPathsForSelectedRows, let selectedIndexPath = selectedIndexPaths.first {
+                    destinationVC.searchList = self.searchArray?[selectedIndexPath.row]
+                }
+            }
+        }
+    }
 }
 
 extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -81,6 +92,7 @@ extension MovieListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: MovieConstant.moveToDetailScreenSegue, sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

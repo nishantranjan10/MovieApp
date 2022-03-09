@@ -142,6 +142,7 @@
                         <outlet property="noMovieView" destination="piZ-pM-vjO" id="bZl-Rp-Yy8"/>
                         <outlet property="searchBar" destination="LNb-9Z-LfI" id="VxT-85-KR9"/>
                         <outlet property="tableView" destination="Bed-ZV-AGL" id="eRC-OO-zny"/>
+                        <segue destination="ejq-AI-SYZ" kind="show" identifier="moveToDetailScreen" id="ASr-lO-lhs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -169,6 +170,36 @@ movies. Please try with another keyword.</string>
                 </view>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="80.357142857142847"/>
+        </scene>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="K5V-PT-KtC">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailViewController" id="ejq-AI-SYZ" customClass="MovieDetailViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oS8-av-DWK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-X0-cKc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eX7-1c-OuZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oe5-X0-cKc" firstAttribute="top" secondItem="eX7-1c-OuZ" secondAttribute="top" id="7pj-ZE-hOo"/>
+                            <constraint firstItem="oe5-X0-cKc" firstAttribute="trailing" secondItem="eX7-1c-OuZ" secondAttribute="trailing" id="LHn-r1-aEq"/>
+                            <constraint firstItem="oe5-X0-cKc" firstAttribute="leading" secondItem="eX7-1c-OuZ" secondAttribute="leading" id="Rtp-VZ-pse"/>
+                            <constraint firstAttribute="bottom" secondItem="oe5-X0-cKc" secondAttribute="bottom" id="d4M-x4-zpg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ALL-hB-z2X"/>
+                    <connections>
+                        <outlet property="imageView" destination="oe5-X0-cKc" id="oTQ-uk-8zS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0U-eK-10q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653.6231884057972" y="77.678571428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CIB-Jc-qRx">
